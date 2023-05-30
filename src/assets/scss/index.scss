@@ -1,0 +1,38 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+    header {
+        @apply border-b;
+    }
+    footer {
+        @apply border-t;
+    }
+    header, footer {
+        @apply text-[#538397] border-[#538397] bg-white flex p-3;
+        img {
+            @apply w-48;
+        }
+        ul {
+            @apply flex flex-row items-center;
+            li {
+                @apply p-3
+            }
+        }
+    }
+    #userCard ul {
+        @apply flex flex-wrap gap-2;
+        li {
+            @apply py-5 px-8;
+            &.blue_card {
+                @apply bg-blue-400;
+            }
+            &.white_card {
+                @apply bg-white;
+            }
+        }
+    }
+}
+
+@import "./includes/_home.scss";
