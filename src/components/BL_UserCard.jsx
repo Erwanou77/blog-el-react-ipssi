@@ -1,6 +1,6 @@
-import Rating from "./Rating";
+import BL_Rating from "./BL_Rating";
 
-const UserCard = () => {
+const BL_UserCard = () => {
     const users = [
         { name: "Cindy", commentaire: "Amie enfance", connaissance: true, star: 5},
         { name: "Solange", commentaire: "Amie enfance", connaissance: true, star: 5},
@@ -17,7 +17,7 @@ const UserCard = () => {
                         {user.name}<br />
                         {user.commentaire}<br />
                         La connaissez-vous ? {user.connaissance ? <span>oui</span> : <span>non</span>}<br />
-                        <Rating starRating={user.star} />
+                        <BL_Rating starRating={user.star} />
                     </li>
                 ))}
             </ul>
@@ -25,4 +25,4 @@ const UserCard = () => {
     );
 };
 
-export default UserCard;
+export default BL_UserCard;

@@ -5,7 +5,7 @@ const Navbar = () => {
             <img src={logo} alt="" />
             <ul>
                 <li><a href="/">Accueil</a></li>
-                <li><a href="/#">Test</a></li>
+                <li><a href="/todolist">Todolist</a></li>
             </ul>
         </header>
     );
